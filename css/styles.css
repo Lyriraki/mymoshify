@@ -84,7 +84,8 @@ a {
 
 .link-arrow::after {
   content: "-->";
-  margin-left: 5px; /* * menggunakan px supaya memiliki ukuran yang tidak berubah apapun medianya(hp/laptop/dll)*/
+  margin-left: 5px;
+  /* * menggunakan px supaya memiliki ukuran yang tidak berubah apapun medianya(hp/laptop/dll)*/
   transition: margin 0.15s;
 }
 
@@ -127,6 +128,7 @@ a {
   .badge {
     font-size: 1.5rem;
   }
+
   .badge--small {
     font-size: 1.2rem;
   }
@@ -607,7 +609,8 @@ a {
 
 /* Blocks */
 .block {
-  --padding-vertical: 6rem; /* ! Bedanya cuma bisa dipakai di block dan childernnya*/
+  --padding-vertical: 6rem;
+  /* ! Bedanya cuma bisa dipakai di block dan childernnya*/
   padding: var(--padding-vertical) 2rem;
 }
 
@@ -772,4 +775,29 @@ a {
 .block-plan .card {
   max-width: 500px;
   margin: 0 auto;
+}
+
+/* Feature */
+
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+}
+
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+
+.feature__heading {
+  margin: 1rem 0;
+}
+
+.feature__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
 }
