@@ -621,10 +621,6 @@ a {
   padding: var(--padding-vertical) 2rem;
 }
 
-.block__heading {
-  margin-top: 0;
-}
-
 .block--dark {
   background: #000;
   color: #7b858b;
@@ -636,8 +632,13 @@ a {
   color: #fff;
 }
 
+.block__heading {
+  margin-top: 0;
+}
+
 .block__header {
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .block--skewed-right {
